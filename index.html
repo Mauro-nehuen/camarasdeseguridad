@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Instalación profesional de cámaras de seguridad en CABA y Gran Buenos Aires (AMBA). Técnicos certificados, garantía 6 meses y presupuesto gratis por WhatsApp. ¡Consultanos hoy!" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1A6BCC" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:title" content="Instalación de Cámaras de Seguridad en AMBA | GLA Security" />
+  <meta property="og:description" content="Instalación profesional de cámaras IP, DVR/NVR y monitoreo remoto en todo el AMBA. Presupuesto sin cargo." />
+  <meta property="og:image" content="https://glasecurity.com.ar/assets/hero-bg.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Instalación de Cámaras de Seguridad en AMBA | GLA Security — Presupuesto Gratis</title>
+  <link rel="canonical" href="https://glasecurity.com.ar/" />
+  <link rel="preload" as="image" href="assets/hero-bg.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #000000;
+      --bg-surface: #0a0a0a;
+      --bg-card: #111111;
+      --bg-card-hover: #161616;
+      --text: #ffffff;
+      --text-muted: #a0a0a0;
+      --accent: #1A6BCC;
+      --accent-hover: #1558aa;
+      --accent-light: rgba(26, 107, 204, 0.12);
+      --accent-glow: rgba(26, 107, 204, 0.35);
+      --border: rgba(255,255,255,0.08);
+      --border-accent: rgba(26, 107, 204, 0.5);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      z-index: 2000;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 16px; }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #111; }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+    /* ── UTILITIES ── */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: all 0.22s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 24px var(--accent-glow);
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      box-shadow: 0 0 36px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.5);
+    }
+    .btn-outline:hover {
+      border-color: #fff;
+      background: rgba(255,255,255,0.06);
+      transform: translateY(-2px);
+    }
+
+    /* ── NAVBAR ── */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      transition: background 0.3s, backdrop-filter 0.3s, border-color 0.3s;
+      border-bottom: 1px solid transparent;
+    }
+    #navbar.scrolled {
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(16px);
+      border-color: var(--border);
+    }
+    .nav-inner {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo-text {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+    .nav-logo-text span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta { flex-shrink: 0; }
+    .nav-cta .btn { padding: 10px 22px; font-size: 14px; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 68px; left: 0; right: 0;
+      background: rgba(0,0,0,0.96);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 24px;
+      z-index: 999;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu a:hover { color: #fff; }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 68px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 72% center;
+      display: block;
+      aspect-ratio: 1024 / 479;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.72) 38%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0.18) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-light);
+      border: 1px solid var(--border-accent);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+      margin-bottom: 28px;
+    }
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+    .hero-title {
+      font-size: clamp(36px, 5.5vw, 62px);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin-bottom: 22px;
+    }
+    .hero-title .accent { color: var(--accent); }
+    .hero-sub {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 56px; }
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    .hero-stat-item { display: flex; flex-direction: column; }
+    .hero-stat-num {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .hero-stat-label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+    /* ── BENEFITS ── */
+    #benefits {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .benefit-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-light);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--border-accent);
+    }
+    .benefit-text-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+    .benefit-text-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .benefits-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 40px rgba(26, 107, 204, 0.12);
+    }
+    .benefits-visual-img {
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      min-height: 280px;
+      max-height: 420px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 16px;
+      aspect-ratio: 1024 / 770;
+    }
+    #benefits, #how, #testimonials, #contact, footer {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 640px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    #how {
+      padding: 100px 0;
+      background: var(--bg-surface);
+    }
+    .how-header { text-align: center; margin-bottom: 70px; }
+    .how-header .section-sub { margin: 0 auto; }
+    .stepper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .stepper::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: calc(10% + 24px);
+      right: calc(10% + 24px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--border-accent) 100%);
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+    }
+    .step-num {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 28px var(--accent-glow);
+      flex-shrink: 0;
+    }
+    .step-icon-wrap {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 28px var(--accent-glow);
+      flex-shrink: 0;
+    }
+    .step-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+    .step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+    .testimonials-header { text-align: center; margin-bottom: 60px; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .testimonial-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+    .star { color: #f5a623; font-size: 16px; }
+    .testimonial-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      border: 1px solid var(--border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    .author-name { font-size: 14px; font-weight: 600; }
+    .author-location { font-size: 12px; color: var(--text-muted); }
+    .testimonial-card.hidden-review { display: none; }
+    .testimonial-card.hidden-review.review-visible {
+      display: block;
+      animation: reviewFadeIn 0.55s ease forwards;
+    }
+    @keyframes reviewFadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn-show-reviews {
+      display: block;
+      margin: 40px auto 0;
+      padding: 13px 32px;
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid #1A6BCC;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.22s ease;
+    }
+    .btn-show-reviews:hover {
+      background: rgba(26, 107, 204, 0.12);
+      transform: translateY(-2px);
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      padding: 100px 0;
+      background: var(--bg-surface);
+    }
+    .contact-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .contact-inner .section-sub { margin: 0 auto; }
+    .contact-info-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+      text-align: left;
+    }
+    .contact-info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .contact-info-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--accent-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--border-accent);
+    }
+    .contact-info-label { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+    .contact-info-value { font-size: 15px; font-weight: 600; }
+    .contact-cta { margin-top: 36px; display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #000;
+      border-top: 1px solid var(--border);
+      padding: 60px 0 28px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 14px 0 0;
+      max-width: 280px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer-col ul a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 13px; color: var(--text-muted); }
+    .footer-bottom a { color: var(--accent); text-decoration: none; }
+
+    /* ── FLOATING WHATSAPP ── */
+    .wa-btn {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 900;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+      transition: all 0.25s;
+      text-decoration: none;
+    }
+    .wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6); }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+    .fade-in-delay-4 { transition-delay: 0.4s; }
+    .fade-in-delay-5 { transition-delay: 0.5s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .benefits-grid { grid-template-columns: 1fr; gap: 48px; }
+      .benefits-visual { order: -1; max-width: 480px; margin: 0 auto; width: 100%; }
+      .benefits-visual-img { max-height: 340px; min-height: 220px; }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-info-items { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+      .stepper { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+      .stepper::before { display: none; }
+      .hero-bg-img { object-position: 80% center; }
+      .hero-overlay {
+        background: linear-gradient(105deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.78) 48%, rgba(0,0,0,0.42) 100%);
+      }
+    }
+    @media (max-width: 640px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+      .btn { min-height: 44px; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .stepper { grid-template-columns: 1fr; }
+      .contact-info-items { grid-template-columns: 1fr; }
+      .hero-bg-img { object-position: 88% center; }
+      .hero-overlay {
+        background: linear-gradient(180deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.78) 50%, rgba(0,0,0,0.58) 100%);
+      }
+      .hero-content { max-width: 100%; }
+      .hero-buttons { margin-bottom: 40px; }
+      .hero-stats { gap: 20px; }
+      .benefits-visual-img { max-height: 260px; min-height: 180px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://glasecurity.com.ar/#negocio",
+        "name": "GLA Security",
+        "description": "Instalación profesional de cámaras de seguridad, sistemas DVR/NVR y monitoreo remoto en el Área Metropolitana de Buenos Aires.",
+        "url": "https://glasecurity.com.ar/",
+        "telephone": "+54-11-2461-8047",
+        "email": "infoglasecurity@gmail.com",
+        "image": "https://glasecurity.com.ar/assets/hero-bg.webp",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "addressCountry": "AR"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+          { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "13",
+          "bestRating": "5",
+          "worstRating": "4"
+        },
+        "sameAs": ["https://wa.me/5491124618047"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://glasecurity.com.ar/#servicio-instalacion-camaras",
+        "name": "Instalación de cámaras de seguridad",
+        "serviceType": "Instalación de cámaras de seguridad",
+        "description": "Instalación de cámaras IP, visión nocturna, DVR/NVR y monitoreo remoto para hogares y comercios en el AMBA.",
+        "provider": { "@id": "https://glasecurity.com.ar/#negocio" },
+        "areaServed": { "@type": "AdministrativeArea", "name": "Área Metropolitana de Buenos Aires" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+<nav id="navbar" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="GLA Security — Inicio">
+      <!-- Shield SVG -->
+      <svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 1L2 6.5V16C2 23.5 7.8 30.4 15 33C22.2 30.4 28 23.5 28 16V6.5L15 1Z" fill="#1A6BCC" stroke="#1A6BCC" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M10 17L13.5 20.5L20.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-logo-text">GLA <span>Security</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#benefits">Beneficios de instalación</a></li>
+      <li><a href="#how">Proceso de instalación</a></li>
+      <li><a href="#testimonials">Opiniones de clientes</a></li>
+      <li><a href="#contact">Solicitar presupuesto</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Solicitar presupuesto</a>
+    </div>
+
+    <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Abrir menú de navegación" onclick="toggleMenu()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMenu();}">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#benefits" onclick="closeMenu()">Beneficios de instalación</a>
+  <a href="#how" onclick="closeMenu()">Proceso de instalación</a>
+  <a href="#testimonials" onclick="closeMenu()">Opiniones de clientes</a>
+  <a href="#contact" onclick="closeMenu()">Solicitar presupuesto</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMenu()" style="text-align:center;justify-content:center;">Solicitar presupuesto</a>
+</div>
+
+<!-- ─── HERO ───────────────────────────────────────────────── -->
+<main id="main-content">
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true">
+    <picture>
+      <source srcset="assets/hero-bg.webp" type="image/webp" />
+      <img src="assets/hero-bg.png" alt="Técnico de GLA Security instalando cámaras de seguridad en domicilio del AMBA" class="hero-bg-img" width="1024" height="479" fetchpriority="high" decoding="async" />
+    </picture>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge fade-in">
+        <span class="hero-badge-dot"></span>
+        Cobertura en todo el AMBA
+      </div>
+      <h1 id="hero-heading" class="hero-title fade-in fade-in-delay-1">
+        Instalación de Cámaras de Seguridad en el <span class="accent">AMBA</span>
+      </h1>
+      <p class="hero-sub fade-in fade-in-delay-2">
+        Protegé tu hogar y negocio con tecnología de punta. Instalación profesional en CABA y Gran Buenos Aires con presupuesto sin cargo y sin compromiso.
+      </p>
+      <div class="hero-buttons fade-in fade-in-delay-3">
+        <a href="#contact" class="btn btn-primary">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.51-1.51a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Solicitar presupuesto gratis
+        </a>
+        <a href="#how" class="btn btn-outline">
+          Ver proceso de instalación
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats fade-in fade-in-delay-4">
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">500+</span>
+          <span class="hero-stat-label">Instalaciones realizadas</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">4/6hs</span>
+          <span class="hero-stat-label">Tiempo de instalación</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">6m</span>
+          <span class="hero-stat-label">Garantía incluida</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BENEFITS ───────────────────────────────────────────── -->
+<section id="benefits">
+  <div class="container">
+    <div class="benefits-grid">
+      <div>
+        <span class="section-label fade-in">Por qué elegirnos</span>
+        <h2 class="section-title fade-in fade-in-delay-1">Instalación profesional de cámaras con la calidad que merecés</h2>
+        <p class="section-sub fade-in fade-in-delay-2" style="margin-bottom: 44px;">Somos técnicos especializados con años de experiencia en el AMBA. Tu seguridad es nuestra prioridad.</p>
+        <div class="benefits-list">
+
+          <div class="benefit-item fade-in fade-in-delay-1">
+            <div class="benefit-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefit-text-title">Aviso previo para instalación en 24 / 48 horas</h3>
+              <div class="benefit-text-desc">Coordinamos la visita técnica rápidamente y ejecutamos la instalación en tiempo récord, sin interrumpir tu rutina.</div>
+            </div>
+          </div>
+
+          <div class="benefit-item fade-in fade-in-delay-2">
+            <div class="benefit-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefit-text-title">Técnicos certificados</h3>
+              <div class="benefit-text-desc">Nuestro equipo está capacitado en las principales marcas del mercado: Hikvision, Dahua, Reolink y más.</div>
+            </div>
+          </div>
+
+          <div class="benefit-item fade-in fade-in-delay-3">
+            <div class="benefit-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefit-text-title">Garantía de 6 meses</h3>
+              <div class="benefit-text-desc">Todos nuestros trabajos incluyen garantía de 6 meses sobre mano de obra y equipos instalados por GLA Security.</div>
+            </div>
+          </div>
+
+          <div class="benefit-item fade-in fade-in-delay-4">
+            <div class="benefit-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefit-text-title">Soporte por WhatsApp</h3>
+              <div class="benefit-text-desc">Te acompañamos después de la instalación para resolver dudas, actualizaciones y cualquier inconveniente técnico dentro de nuestro horario de atencion de 8:00 a 18:00</div>
+            </div>
+          </div>
+
+          <div class="benefit-item fade-in fade-in-delay-5">
+            <div class="benefit-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefit-text-title">Más de 5 años de experiencia</h3>
+              <div class="benefit-text-desc">Llevamos más de 5 años brindando soluciones de seguridad profesionales en todo el AMBA, con cientos de instalaciones realizadas.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Visual: panel de monitoreo -->
+      <div class="benefits-visual fade-in fade-in-delay-2">
+        <picture>
+          <source srcset="assets/benefits-visual.webp" type="image/webp" />
+          <img src="assets/benefits-visual.png" alt="Centro de monitoreo con cámaras de seguridad IP, grabación DVR y acceso remoto desde celular en Buenos Aires" class="benefits-visual-img" width="1024" height="770" loading="lazy" decoding="async" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ───────────────────────────────────────── -->
+<section id="how">
+  <div class="container">
+    <div class="how-header fade-in">
+      <span class="section-label">El proceso</span>
+      <h2 class="section-title">Proceso de instalación de cámaras de seguridad</h2>
+      <p class="section-sub">En 5 pasos tenés tu sistema de seguridad instalado y funcionando al 100%.</p>
+    </div>
+    <div class="stepper">
+
+      <div class="step fade-in">
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.51-1.51a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Contacto inicial</h3>
+        <div class="step-desc">Nos contactás por WhatsApp o teléfono. Respondemos en menos de 1 hora en horario laboral.</div>
+      </div>
+
+      <div class="step fade-in fade-in-delay-1">
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Presupuesto por WhatsApp</h3>
+        <div class="step-desc">Segun el kit de camaras el tecnico evaluara el presupuesto</div>
+      </div>
+
+      <div class="step fade-in fade-in-delay-2">
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Visita técnica por reparaciones</h3>
+        <div class="step-desc">Ante cualquier inconveniente, nuestro equipo técnico se acerca a tu domicilio o comercio para resolverlo de forma rápida y eficiente.</div>
+      </div>
+
+      <div class="step fade-in fade-in-delay-3">
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Instalación profesional</h3>
+        <div class="step-desc">Coordinamos la fecha de instalación y nuestro equipo trabaja de forma ordenada y eficiente en 24 a 48 horas.</div>
+      </div>
+
+      <div class="step fade-in fade-in-delay-4">
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Sistema activo y capacitación</h3>
+        <div class="step-desc">Te capacitamos en el uso del sistema, te configuramos el acceso remoto y te dejamos con todo funcionando.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ───────────────────────────────────────── -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header fade-in">
+      <span class="section-label">Testimonios</span>
+      <h2 class="section-title">Opiniones de clientes sobre nuestra instalación de cámaras</h2>
+    </div>
+    <div class="testimonials-grid" id="testimonialsGrid">
+
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Contratamos GLA Security para nuestro local en Palermo. En 48 horas ya teníamos 6 cámaras instaladas y funcionando perfecto. El seguimiento post-instalación fue excelente."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">ML</div>
+          <div>
+            <div class="author-name">Marcos López</div>
+            <div class="author-location">Local comercial — Palermo, CABA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in fade-in-delay-1">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Muy profesionales. Me asesoraron muy bien sobre qué tipo de cámara necesitaba para el jardín y la entrada de mi casa. El precio fue justo y la instalación quedó impecable."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div>
+            <div class="author-name">Sofía Rodríguez</div>
+            <div class="author-location">Casa particular — Quilmes, GBA Sur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in fade-in-delay-2">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Instalaron el sistema en nuestro depósito y nos explicaron todo. Ahora veo las cámaras desde el celular en tiempo real. Recomiendo 100% su servicio y rapidez."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">DG</div>
+          <div>
+            <div class="author-name">Diego García</div>
+            <div class="author-location">Depósito industrial — Avellaneda, GBA Sur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Llamé un martes y el jueves ya tenía las cámaras en el frente y el fondo de mi casa en Belgrano. Trabajo limpio, sin cables a la vista. Muy conforme con la velocidad de instalación."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CV</div>
+          <div>
+            <div class="author-name">Carmen Vega</div>
+            <div class="author-location">Casa particular — Belgrano, CABA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.25">★</span>
+        </div>
+        <p class="testimonial-text">"Comparé varios presupuestos y GLA Security fue el más conveniente sin sacrificar calidad. Instalaron 4 cámaras en mi kiosco de La Matanza y el resultado superó lo que esperaba."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RP</div>
+          <div>
+            <div class="author-name">Roberto Paz</div>
+            <div class="author-location">Kiosco — La Matanza, GBA Oeste</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Tuve un problema con una cámara a los dos meses y el soporte técnico respondió por WhatsApp al toque. Vinieron a Vicente López y lo solucionaron en el día. Excelente atención."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">LF</div>
+          <div>
+            <div class="author-name">Laura Fernández</div>
+            <div class="author-location">Casa particular — Vicente López, GBA Norte</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Protegimos toda la casa en Morón con visión nocturna en el patio y la cochera. Los técnicos fueron muy claros al explicarnos cómo usar la app desde el celular."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div>
+            <div class="author-name">Andrés Mucci</div>
+            <div class="author-location">Casa particular — Morón, GBA Oeste</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.25">★</span>
+        </div>
+        <p class="testimonial-text">"Instalaron cámaras en mi peluquería de San Isidro. El precio fue accesible y el sistema nos da tranquilidad cuando cerramos el local. Muy buena relación calidad-precio."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PN</div>
+          <div>
+            <div class="author-name">Patricia Nieto</div>
+            <div class="author-location">Comercio — San Isidro, GBA Norte</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Coordinaron la instalación en menos de 24 horas para nuestro galpón en Lanús. Llegaron puntuales, trabajaron ordenados y dejaron todo funcionando antes de irse."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">GR</div>
+          <div>
+            <div class="author-name">Gustavo Ríos</div>
+            <div class="author-location">Galpón comercial — Lanús, GBA Sur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"El soporte post-instalación es lo mejor. Cualquier duda que tengo sobre la app o las grabaciones me la resuelven por WhatsApp en minutos. Muy recomendables en Tigre."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">VS</div>
+          <div>
+            <div class="author-name">Valeria Soto</div>
+            <div class="author-location">Casa particular — Tigre, GBA Norte</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.25">★</span>
+        </div>
+        <p class="testimonial-text">"Pedí presupuesto para mi almacén en Lomas de Zamora y fue el más claro de todos. Sin sorpresas en el precio final. Las cámaras cubren cada rincón del local."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">EC</div>
+          <div>
+            <div class="author-name">Ernesto Cabral</div>
+            <div class="author-location">Almacén — Lomas de Zamora, GBA Sur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Vivo en un PH en Caballito y necesitaba cámaras discretas en el acceso. Me asesoraron con paciencia y la instalación quedó prolija. Duermo mucho más tranquila."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MT</div>
+          <div>
+            <div class="author-name">Micaela Torres</div>
+            <div class="author-location">PH — Caballito, CABA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card hidden-review fade-in">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Tenemos un local de ropa en San Martín y GLA Security nos armó un sistema completo con grabación y acceso remoto. El equipo técnico fue muy profesional de principio a fin."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JP</div>
+          <div>
+            <div class="author-name">Juan Pérez</div>
+            <div class="author-location">Local comercial — San Martín, GBA Oeste</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button type="button" class="btn-show-reviews" id="toggleReviewsBtn" onclick="toggleReviews()">Ver todos los comentarios ▼</button>
+  </div>
+</section>
+
+<!-- ─── CONTACT ────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <span class="section-label fade-in">Contacto</span>
+        <h2 class="section-title fade-in fade-in-delay-1">Solicitá presupuesto para cámaras de seguridad en el AMBA</h2>
+        <p class="section-sub fade-in fade-in-delay-2">Escribinos por WhatsApp o llamanos. Te damos presupuesto sin cargo y solución a medida.</p>
+
+        <div class="contact-info-items">
+          <div class="contact-info-item fade-in fade-in-delay-1">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.51-1.51a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Teléfono / WhatsApp</div>
+              <div class="contact-info-value"><a href="https://wa.me/5491124618047" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">+54 11 2461-8047</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item fade-in fade-in-delay-2">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Correo electrónico</div>
+              <div class="contact-info-value"><a href="mailto:infoglasecurity@gmail.com" style="color:inherit;text-decoration:none;">infoglasecurity@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item fade-in fade-in-delay-3">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Zona de cobertura</div>
+              <div class="contact-info-value">AMBA — Ciudad y Gran Buenos Aires</div>
+            </div>
+          </div>
+          <div class="contact-info-item fade-in fade-in-delay-4">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A6BCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Horario de atención</div>
+              <div class="contact-info-value">Lun–Sáb · 8:00 a 18:00 hs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta fade-in fade-in-delay-3">
+          <a href="https://wa.me/5491124618047" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            Consultar por WhatsApp
+          </a>
+          <a href="tel:+5491124618047" class="btn btn-outline">Llamar ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="display:inline-flex;">
+          <svg width="28" height="32" viewBox="0 0 30 34" fill="none">
+            <path d="M15 1L2 6.5V16C2 23.5 7.8 30.4 15 33C22.2 30.4 28 23.5 28 16V6.5L15 1Z" fill="#1A6BCC" stroke="#1A6BCC" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M10 17L13.5 20.5L20.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="nav-logo-text" style="font-size:18px;">GLA <span>Security</span></span>
+        </a>
+        <p>Instalación profesional de cámaras de seguridad en todo el Área Metropolitana de Buenos Aires. Tu tranquilidad, nuestra misión.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios de seguridad</h4>
+        <ul>
+          <li><a href="#benefits">Instalación de cámaras IP</a></li>
+          <li><a href="#benefits">Cámaras con visión nocturna</a></li>
+          <li><a href="#benefits">Sistemas DVR y NVR</a></li>
+          <li><a href="#how">Monitoreo remoto desde celular</a></li>
+          <li><a href="#contact">Mantenimiento y soporte técnico</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#benefits">Por qué elegir GLA Security</a></li>
+          <li><a href="#how">Proceso de instalación</a></li>
+          <li><a href="#testimonials">Testimonios de clientes</a></li>
+          <li><a href="#contact">Contacto y presupuesto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Cobertura en AMBA</h4>
+        <ul>
+          <li><a href="#contact">Instalación de cámaras en CABA</a></li>
+          <li><a href="#contact">Cámaras de seguridad GBA Norte</a></li>
+          <li><a href="#contact">Cámaras de seguridad GBA Sur</a></li>
+          <li><a href="#contact">Cámaras de seguridad GBA Oeste</a></li>
+          <li><a href="#contact">Zona Conurbana — Gran Buenos Aires</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 GLA Security. Todos los derechos reservados.</p>
+      <p>Diseño web por <a href="#">GLA Security</a> · Buenos Aires, Argentina</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── FLOATING WHATSAPP ───────────────────────────────────── -->
+<a href="https://wa.me/5491124618047" class="wa-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<!-- ─── SCRIPTS ─────────────────────────────────────────────── -->
+<script defer>
+  const navbar = document.getElementById('navbar');
+  let scrollTicking = false;
+  function onScroll() {
+    if (!scrollTicking) {
+      scrollTicking = true;
+      requestAnimationFrame(() => {
+        navbar.classList.toggle('scrolled', window.scrollY > 20);
+        let current = '';
+        document.querySelectorAll('section[id]').forEach(sec => {
+          if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.style.color = link.getAttribute('href') === '#' + current ? '#fff' : '';
+        });
+        scrollTicking = false;
+      });
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Smooth counter animation for hero stats
+  function animateCounter(el, target, suffix = '') {
+    let start = 0;
+    const duration = 1800;
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(document.querySelector('.hero-stat-num'), 500, '+');
+        heroObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const statsEl = document.querySelector('.hero-stats');
+  if (statsEl) heroObserver.observe(statsEl);
+
+  // Testimonials expand/collapse
+  function toggleReviews() {
+    const hiddenReviews = document.querySelectorAll('.testimonial-card.hidden-review');
+    const btn = document.getElementById('toggleReviewsBtn');
+    const isExpanded = btn.dataset.expanded === 'true';
+
+    if (!isExpanded) {
+      hiddenReviews.forEach(card => {
+        card.classList.add('review-visible');
+        if (card.classList.contains('fade-in') && !card.classList.contains('visible')) {
+          card.classList.add('visible');
+        }
+      });
+      btn.textContent = 'Ocultar comentarios ▲';
+      btn.dataset.expanded = 'true';
+    } else {
+      hiddenReviews.forEach(card => {
+        card.classList.remove('review-visible');
+      });
+      btn.textContent = 'Ver todos los comentarios ▼';
+      btn.dataset.expanded = 'false';
+    }
+  }
+</script>
+</body>
+</html>
